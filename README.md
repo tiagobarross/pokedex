@@ -1,40 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Pokedex - Aplicação Web de Pokémon
 
-## Getting Started
+<img alt="projeto devlinks" src=".github/preview.jpg" width="100%">
 
-First, run the development server:
+## Objetivo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+O objetivo deste projeto foi desenvolver uma aplicação web utilizando **Next.js**, **Tailwind CSS** e **Node.js**. A aplicação consome a **PokéAPI** para exibir uma lista de Pokémon e permite a interação do usuário com funcionalidades de **criação**, **edição**, **exclusão** e **filtro** de Pokémon.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A aplicação é responsiva e interativa, proporcionando uma experiência de usuário intuitiva e agradável.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Funcionalidades
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- **Listagem de Pokémon**: Exibe uma lista inicial com pelo menos 10 Pokémon consumidos da API pública (PokéAPI).
+- **Criação de Pokémon**: Permite adicionar novos Pokémon à lista, mockando a criação no frontend (sem persistência real na API).
+- **Edição de Pokémon**: Possibilita a alteração do nome de um Pokémon.
+- **Exclusão de Pokémon**: Permite excluir um Pokémon da lista.
+- **Filtro de Pokémon**: Implementa um campo de busca para filtrar os Pokémon pelo nome.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## Tecnologias Utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js**: Framework React para desenvolvimento de aplicações web.
+- **Tailwind CSS**: Framework de estilização baseado em classes utilitárias para design responsivo e rápido.
+- **React.js**: Biblioteca JavaScript para criação de interfaces de usuário.
+- **Node.js**: Ambiente de execução para código JavaScript do lado do servidor (para consumo da PokéAPI).
+- **React Query**: Biblioteca para gerenciamento de dados assíncronos (usada para consumir a PokéAPI).
+- **PokéAPI**: API pública que fornece informações sobre Pokémon.
 
-## Learn More
+## Requisitos
 
-To learn more about Next.js, take a look at the following resources:
+Antes de rodar o projeto localmente, você precisa ter os seguintes pré-requisitos:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+- Node.js e npm instalados na sua máquina.
+- Acesso à internet para consumo da **PokéAPI**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Instalação
 
-## Deploy on Vercel
+1. Clone este repositório para o seu computador:
+   ```bash
+   git clone https://github.com/seu-usuario/pokedex.git
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Navegue até o diretório do projeto:
+  ```bash
+  cd pokedex
+  ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+3. Instale as dependências:
+  ```bash
+  npm install
+  ```
+
+4. Rode o servidor de desenvolvimento:
+  ```bash
+  npm run dev
+  ```
+
+5. Abra o navegador e acesse: http://localhost:3000
+
+## Estrutura do Projeto
+- **pages/:** Contém as páginas principais da aplicação.
+
+- **components/:** Componentes reutilizáveis, como os cards de Pokémon.
+
+- **hooks/:** Hooks personalizados, como o hook para gerenciamento da lista de Pokémon.
+
+- **styles/:** Arquivos de estilo, configurados com Tailwind CSS.
+
+## Como Usar
+1. **Exibir Pokémon:** Ao acessar a aplicação, a lista inicial de 10 Pokémon será exibida com as informações de imagem, nome e ID.
+
+2. **Adicionar Pokémon:** Utilize o campo de entrada e o botão de "Adicionar Pokémon" para incluir novos Pokémon (mockados no frontend).
+
+3. **Editar Pokémon:** Clique no botão de editar para alterar o nome de qualquer Pokémon da lista.
+
+4. **Excluir Pokémon:** Clique no botão de excluir para remover um Pokémon da lista.
+
+5. **Filtrar Pokémon:** Utilize o campo de busca para filtrar a lista de Pokémon pelo nome.
+
+## Requisitos de UI/UX
+- A interface é responsiva e adaptável a diferentes tamanhos de tela.
+- A lista de Pokémon é exibida em cards com as informações de imagem, nome e ID.
+- Os botões de editar e excluir estão visíveis em cada card.
+- O botão de adicionar Pokémon fica no topo da lista de Pokémon.
