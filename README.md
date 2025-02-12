@@ -10,11 +10,11 @@ A aplicação é responsiva e interativa, proporcionando uma experiência de usu
 
 ## Funcionalidades
 
-- **Listagem de Pokémon**: Exibe uma lista inicial com pelo menos 10 Pokémon consumidos da API pública (PokéAPI).
+- **Listagem de Pokémon**: Exibe uma lista inicial com pelo menos 12 Pokémon consumidos da API pública (PokéAPI).
 - **Criação de Pokémon**: Permite adicionar novos Pokémon à lista, mockando a criação no frontend (sem persistência real na API).
 - **Edição de Pokémon**: Possibilita a alteração do nome de um Pokémon.
 - **Exclusão de Pokémon**: Permite excluir um Pokémon da lista.
-- **Filtro de Pokémon**: Implementa um campo de busca para filtrar os Pokémon pelo nome.
+- **Filtro de Pokémon**: Implementa um campo de busca para filtrar os Pokémon pelo nome e ID.
 
 ## Tecnologias Utilizadas
 
